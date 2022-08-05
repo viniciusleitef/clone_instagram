@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Instagram</title>
+
+    <script src="index.js" defer></script>
 </head>
 <body>
     <main>
@@ -19,10 +21,10 @@
                 <img class="instagram" src="img/instagram.png" alt="instagram">
 
                 <label class="menu">
-                    <input type="text" placeholder="Telefone, nome de usuário ou email">
-                    <input type="password" placeholder="Senha">
+                    <input id="login" type="text" placeholder="Telefone, nome de usuário ou email">
+                    <input oninput ="varLogin()" id="senha" type="password" placeholder="Senha">
 
-                    <button class="login_button" type="submit">Entrar</button>
+                    <button id="login_button" class="login_button" type="submit">Entrar</button>
                     <div class="box">
                         <div class="traço"></div>
                         <p>ou</p>
@@ -68,7 +70,7 @@
             </ul>
         </div>
 
-        <div class="second">
+        <div class="second">    
             <ul>
                 <li><a href="">Dança</a></li>
                 <li><a href="">Comida e bebida</a></li>
@@ -81,7 +83,7 @@
         <div class="third">
             <ul>
                 <li><a href=""></a>Português (Brasil)</li>
-                <li><a href="">2022 Instagram from Meta</a></li>
+                <li>©2022 Instagram from Meta</li>
             </ul>
         </div>
     </footer>
