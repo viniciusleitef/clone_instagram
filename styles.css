@@ -32,9 +32,9 @@ body{
 
 .fotos :nth-child(2){
     position: absolute;
-    width: 320px;
-    left: 70px;
-    top: 25px;
+    width: 420px;
+    left: 45px;
+    top: 45px;
 }
 
 .form{
@@ -166,14 +166,15 @@ footer{
     width: 100%;
     height: 100px;
     color: rgb(142, 142, 142);
+    margin-bottom: 30px;
 }
 
 .first{
-    width: 80%;
+    width: 100%;
     height: 25%;
     margin: 0 auto;
     font-size: 13px;
-    
+
 }
 
 .first ul{
@@ -183,7 +184,9 @@ footer{
 }
 
 .first li{
-    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 10px;
 }
 
@@ -193,7 +196,7 @@ footer{
 }
 
 .second{
-    width: 80%;
+    width: 100%;
     height: 30%;
     margin: 0 auto;
     font-size: 13px;
@@ -236,3 +239,77 @@ footer{
 .third li a{
     text-decoration: none;
 }
+
+
+@media (max-width: 1050px){
+    .first{
+        height: 50%;
+    }
+    .first ul{
+        flex-wrap: wrap;
+    }
+
+    .second{
+        margin-bottom: 20px;
+    }
+
+    .second ul{
+        flex-wrap: wrap;
+    }
+
+    .second li{
+        padding: 2.5px;
+    }
+
+}
+
+@media(max-width: 800px){
+    .fotos{
+        display: none;
+    }
+
+    .main{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .form{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px){
+
+    main{
+        height: 80vh;
+    }
+
+    .form{
+        background-color: rgb(250,250,250);
+    }
+
+    .bloco1{
+        background-color: rgb(250,250,250);
+        border: none;
+    }
+
+    .cadastro{
+        background-color: rgb(250,250,250);
+        border: none;
+    }
+
+    .first{
+        margin-bottom: 20px;
+    }
+
+    .first li{
+        padding: 2.5px;
+    }
+}
+
+@media (max-width: 400px){
+    main{
+        height: 90vh;
+    }
+}
+
